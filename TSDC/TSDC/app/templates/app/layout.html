@@ -1,0 +1,208 @@
+<!---這個是打開網頁出現的第一個畫面-->>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - TSDC 專案</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/styles.css' %}" />
+
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <script src="{% static 'app/scripts/scripts.js' %}"></script>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        section {
+            float: left;
+            width: 30%;
+            height: 500px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+            section ol {
+                list-style-type: none;
+                padding: 0;
+                font-size: 25px;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 500px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <!--首頁圖標
+    
+    <link rel="icon" type="image/x-icon" href="{% static 'app/images/favicon.ico' %}" />
+    -->
+</head>
+
+
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar封面內容-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">左邊按鈕最上方</div>
+            <div class="list-group list-group-flush">
+                <!--
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chA:index' %}">chA專題動機</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chB:index' %}">chB專題目標</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chC:index' %}">chC專題行程</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chD:index' %}">chD整理股票相關遭遇的困難</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chE:index' %}">chE爬蟲相關遭遇的困難</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chF:index' %}">chF撰寫網站遭遇的困難</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chG:index' %}">chG小組合作遭遇的困難</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chH:index' %}">chH專題展望</a>
+    -->
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chI:index' %}">chI實例1 富邦金</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chJ:index' %}">chJ實例2 華碩</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chJ:stock2881' %}">業師範本：富邦金2881</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'chJ:stock2330' %}">範本：台積電2330</a>
+                <!--後面要更新
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">半導體</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'food:index' %}">食品</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'food:stock' %}">台積電</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'financial:index' %}">金融</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'financial:index' %}">ETF</a>
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'shipping:index' %}">航運業</a>
+        -->
+            </div>
+        </div>
+        <!-- Page content wrapper網頁內容包裝-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation網頁最上面那一排-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content左邊按鈕-->
+            <div class="container-fluid">
+                <!--現在是內文的部分-->>
+                <h1>TSDC D組期中報告</h1>
+
+
+                <header>
+                    <h2>新手股票投資攻略網站</h2>
+                </header>
+
+                <section>
+                    <ol>
+                        <li><a href="#!">最新文章</a></li>
+                        <li><a href="#!">更新日誌</a></li>
+                        <!--
+                        <li><a href="{% url 'chA:index' %}">專題動機</a></li>
+                        <li><a href="{% url 'chB:index' %}">專題目標</a></li>
+                        <li><a href="{% url 'chC:index' %}">專題行程</a></li>
+                        <li><a href="{% url 'chD:index' %}">整理股票相關遭遇的困難</a></li>
+                        <li><a href="{% url 'chE:index' %}">爬蟲相關遭遇的困難</a></li>
+                        <li><a href="{% url 'chF:index' %}">撰寫網站遭遇的困難</a></li>
+                        <li><a href="{% url 'chG:index' %}">小組合作遭遇的困難</a></li>
+                        <li><a href="{% url 'chH:index' %}">專題展望</a></li>
+                        <li><a href="{% url 'chI:index' %}">文章範例一</a></li>
+                        <li><a href="{% url 'chJ:index' %}">文章範例二</a></li>
+                        -->
+                    </ol>
+
+
+                </section>
+                <article>
+                    <h1>成員介紹</h1>
+                    <h2>業師</h2>
+                    <ol>
+                        <li>凱欣學姊</li>
+                        <li>浩偉學長</li>
+                    </ol>
+                    <h2>學員</h2>
+                    <ol>
+                        <li>統計三C 40865 鄭景鴻</li>
+                        <li>統計三C 40865 陳維宇</li>
+                        <li>統計三C 40865 宋瑞騰</li>
+                    </ol>
+                </article>
+                
+                <footer>
+                    <p>練習網頁排版</p>
+                </footer>
+
+                <!-- 圖片 -->
+                <h1>練習連接照片到網頁，放個貓咪鎮樓圖</h1>
+                <img src="{% static 'app/images/cat_test.jpg' %}" alt="it is a cat" height="360" width="640">
+
+            </div>
+        </div>
+    </div>
+   
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    
+
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

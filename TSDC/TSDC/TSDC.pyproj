@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>TSDC</Name>
+    <RootNamespace>TSDC</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a427f126-c4c3-456a-852e-232f3a5499b7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>TSDC.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="chA\admin.py" />
+    <Compile Include="chA\apps.py" />
+    <Compile Include="chA\migrations\__init__.py" />
+    <Compile Include="chA\models.py" />
+    <Compile Include="chA\tests.py" />
+    <Compile Include="chA\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chA\views.py" />
+    <Compile Include="chA\__init__.py" />
+    <Compile Include="chB\admin.py" />
+    <Compile Include="chB\apps.py" />
+    <Compile Include="chB\migrations\__init__.py" />
+    <Compile Include="chB\models.py" />
+    <Compile Include="chB\tests.py" />
+    <Compile Include="chB\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chB\views.py" />
+    <Compile Include="chB\__init__.py" />
+    <Compile Include="chC\admin.py" />
+    <Compile Include="chC\apps.py" />
+    <Compile Include="chC\migrations\__init__.py" />
+    <Compile Include="chC\models.py" />
+    <Compile Include="chC\tests.py" />
+    <Compile Include="chC\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chC\views.py" />
+    <Compile Include="chC\__init__.py" />
+    <Compile Include="chD\admin.py" />
+    <Compile Include="chD\apps.py" />
+    <Compile Include="chD\migrations\__init__.py" />
+    <Compile Include="chD\models.py" />
+    <Compile Include="chD\tests.py" />
+    <Compile Include="chD\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chD\views.py" />
+    <Compile Include="chD\__init__.py" />
+    <Compile Include="chE\admin.py" />
+    <Compile Include="chE\apps.py" />
+    <Compile Include="chE\migrations\__init__.py" />
+    <Compile Include="chE\models.py" />
+    <Compile Include="chE\tests.py" />
+    <Compile Include="chE\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chE\views.py" />
+    <Compile Include="chE\__init__.py" />
+    <Compile Include="chF\admin.py" />
+    <Compile Include="chF\apps.py" />
+    <Compile Include="chF\migrations\__init__.py" />
+    <Compile Include="chF\models.py" />
+    <Compile Include="chF\tests.py" />
+    <Compile Include="chF\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chF\views.py" />
+    <Compile Include="chF\__init__.py" />
+    <Compile Include="chG\admin.py" />
+    <Compile Include="chG\apps.py" />
+    <Compile Include="chG\migrations\__init__.py" />
+    <Compile Include="chG\models.py" />
+    <Compile Include="chG\tests.py" />
+    <Compile Include="chG\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chG\views.py" />
+    <Compile Include="chG\__init__.py" />
+    <Compile Include="chH\admin.py" />
+    <Compile Include="chH\apps.py" />
+    <Compile Include="chH\migrations\__init__.py" />
+    <Compile Include="chH\models.py" />
+    <Compile Include="chH\tests.py" />
+    <Compile Include="chH\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chH\views.py" />
+    <Compile Include="chH\__init__.py" />
+    <Compile Include="chI\admin.py" />
+    <Compile Include="chI\apps.py" />
+    <Compile Include="chI\migrations\__init__.py" />
+    <Compile Include="chI\models.py" />
+    <Compile Include="chI\tests.py" />
+    <Compile Include="chI\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chI\views.py" />
+    <Compile Include="chI\__init__.py" />
+    <Compile Include="chJ\admin.py" />
+    <Compile Include="chJ\apps.py" />
+    <Compile Include="chJ\migrations\__init__.py" />
+    <Compile Include="chJ\models.py" />
+    <Compile Include="chJ\tests.py" />
+    <Compile Include="chJ\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chJ\views.py" />
+    <Compile Include="chJ\__init__.py" />
+    <Compile Include="financial\admin.py" />
+    <Compile Include="financial\apps.py" />
+    <Compile Include="financial\migrations\__init__.py" />
+    <Compile Include="financial\models.py" />
+    <Compile Include="financial\tests.py" />
+    <Compile Include="financial\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="financial\views.py" />
+    <Compile Include="financial\__init__.py" />
+    <Compile Include="food\admin.py" />
+    <Compile Include="food\apps.py" />
+    <Compile Include="food\migrations\__init__.py" />
+    <Compile Include="food\models.py" />
+    <Compile Include="food\tests.py" />
+    <Compile Include="food\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="food\views.py" />
+    <Compile Include="food\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="shipping\admin.py" />
+    <Compile Include="shipping\apps.py" />
+    <Compile Include="shipping\migrations\__init__.py" />
+    <Compile Include="shipping\models.py" />
+    <Compile Include="shipping\tests.py" />
+    <Compile Include="shipping\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shipping\views.py" />
+    <Compile Include="shipping\__init__.py" />
+    <Compile Include="TSDC\__init__.py" />
+    <Compile Include="TSDC\settings.py" />
+    <Compile Include="TSDC\urls.py" />
+    <Compile Include="TSDC\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\images\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="chA\" />
+    <Folder Include="chA\migrations\" />
+    <Folder Include="chA\templates\" />
+    <Folder Include="chA\templates\chA\" />
+    <Folder Include="chB\" />
+    <Folder Include="chB\migrations\" />
+    <Folder Include="chB\templates\" />
+    <Folder Include="chB\templates\chB\" />
+    <Folder Include="chC\" />
+    <Folder Include="chC\migrations\" />
+    <Folder Include="chC\templates\" />
+    <Folder Include="chC\templates\chC\" />
+    <Folder Include="chD\" />
+    <Folder Include="chD\migrations\" />
+    <Folder Include="chD\templates\" />
+    <Folder Include="chD\templates\chD\" />
+    <Folder Include="chE\" />
+    <Folder Include="chE\migrations\" />
+    <Folder Include="chE\templates\" />
+    <Folder Include="chE\templates\chE\" />
+    <Folder Include="chF\" />
+    <Folder Include="chF\migrations\" />
+    <Folder Include="chF\templates\" />
+    <Folder Include="chF\templates\chF\" />
+    <Folder Include="chG\" />
+    <Folder Include="chG\migrations\" />
+    <Folder Include="chG\templates\" />
+    <Folder Include="chG\templates\chG\" />
+    <Folder Include="chH\" />
+    <Folder Include="chH\migrations\" />
+    <Folder Include="chH\templates\" />
+    <Folder Include="chH\templates\chH\" />
+    <Folder Include="chI\" />
+    <Folder Include="chI\migrations\" />
+    <Folder Include="chI\templates\" />
+    <Folder Include="chI\templates\chI\" />
+    <Folder Include="chJ\" />
+    <Folder Include="chJ\migrations\" />
+    <Folder Include="chJ\templates\" />
+    <Folder Include="chJ\templates\chJ\" />
+    <Folder Include="financial\" />
+    <Folder Include="financial\migrations\" />
+    <Folder Include="financial\templates\" />
+    <Folder Include="financial\templates\financial\" />
+    <Folder Include="food\" />
+    <Folder Include="food\migrations\" />
+    <Folder Include="food\static\" />
+    <Folder Include="food\static\csv\" />
+    <Folder Include="food\templates\" />
+    <Folder Include="food\templates\food\" />
+    <Folder Include="staticfiles\" />
+    <Folder Include="shipping\" />
+    <Folder Include="shipping\migrations\" />
+    <Folder Include="shipping\static\" />
+    <Folder Include="shipping\static\images\" />
+    <Folder Include="shipping\templates\" />
+    <Folder Include="shipping\templates\shipping\" />
+    <Folder Include="staticfiles\images\" />
+    <Folder Include="staticfiles\css\" />
+    <Folder Include="staticfiles\images\2303\" />
+    <Folder Include="staticfiles\images\report\" />
+    <Folder Include="staticfiles\js\" />
+    <Folder Include="staticfiles\csv\" />
+    <Folder Include="staticfiles\專門放靜態的東西\" />
+    <Folder Include="TSDC\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\content\styles.css" />
+    <Content Include="app\static\app\images\cat_test.jpg" />
+    <Content Include="app\static\app\images\favicon.ico" />
+    <Content Include="app\static\app\scripts\scripts.js" />
+    <Content Include="chA\templates\chA\index.html" />
+    <Content Include="chB\templates\chB\index.html" />
+    <Content Include="chC\templates\chC\index.html" />
+    <Content Include="chD\templates\chD\index.html" />
+    <Content Include="chE\templates\chE\index.html" />
+    <Content Include="chF\templates\chF\index.html" />
+    <Content Include="chG\templates\chG\index.html" />
+    <Content Include="chH\templates\chH\index.html" />
+    <Content Include="chI\templates\chI\index.html" />
+    <Content Include="chJ\templates\chJ\2881tw.html" />
+    <Content Include="chJ\templates\chJ\index.html" />
+    <Content Include="chJ\templates\chJ\showstock2330.html" />
+    <Content Include="financial\templates\financial\index.html" />
+    <Content Include="food\static\csv\data.csv" />
+    <Content Include="food\templates\food\csvshow.html" />
+    <Content Include="food\templates\food\index.html" />
+    <Content Include="food\templates\food\stockshow.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="shipping\static\images\dog_test.jpg" />
+    <Content Include="shipping\templates\shipping\index.html" />
+    <Content Include="staticfiles\csv\2330_TW.csv" />
+    <Content Include="staticfiles\csv\data.csv" />
+    <Content Include="staticfiles\images\2303\dog.jpg" />
+    <Content Include="staticfiles\images\dog_test.jpg" />
+    <Content Include="staticfiles\images\report\catgif.gif" />
+    <Content Include="staticfiles\images\report\doggif.gif" />
+    <Content Include="staticfiles\images\report\加權指數.jpg" />
+    <Content Include="staticfiles\images\report\國泰金.jpg" />
+    <Content Include="staticfiles\images\report\富邦金.jpg" />
+    <Content Include="staticfiles\images\report\廣達.jpg" />
+    <Content Include="staticfiles\images\report\華碩.jpg" />
+    <Content Include="staticfiles\images\report\金融大盤.jpg" />
+    <Content Include="staticfiles\images\report\電腦周邊類大盤.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>0.0</Version>
+      <Description>env (Python 3.10 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,36 @@
+﻿<!--chI文章範例一-->
+<html>
+<head>
+    <!--讀取照片時需要加-->
+    {% load static %}
+    <title></title>
+</head>
+
+<body>
+    <!--第一部分-->
+    <h1 align='center'>實例1 富邦金​</h1>
+    <!-- 圖片：方法一 -->
+    <img src="{% static 'images/report/加權指數.jpg' %}" alt="加權指數" height="360" width="640">
+    <img src="{% static 'images/report/富邦金.jpg' %}" alt="富邦金" height="360" width="640">
+    <p>
+        從大盤占比的圖表可以知道電腦及週邊設備業占大盤指數的4.5803%僅次於半導體業、金融保險、電子零組件業，我們可以看到華碩經歷了2012年整體的高峰但同時2013年智慧型手機的虧損導致股價下跌
+    </p>
+    <!--第二部分-->
+    <!-- 圖片：方法一 -->
+    <img src="{% static 'images/report/國泰金.jpg' %}" alt="國泰金" height="360" width="640">
+    <img src="{% static 'images/report/金融大盤.jpg' %}" alt="金融大盤" height="360" width="640">
+    <p>
+        "運用各股資本額" /"總金融股資本額 " 得到各股在金融業的占比，經過計算後富邦金(2881)佔6.3%僅次
+        於國泰金(6.9%)、開發金(9%)、兆豐金(6.4%)、新光金(6.7%)、第一金(9.4%)、合庫金(6.4%)，除了超過9%的兩檔股票外其餘都很接近，因此我們也看到金融股大盤與富邦金整體的走勢沒有太大的差異
+    </p>
+   
+
+
+    <ul>
+        <li><a href="{% url 'home' %}">返回首頁</a></li>
+        <li><a href="{% url 'chI:index' %}">chI實例1 富邦金​</a></li>
+        <li><a href="{% url 'chJ:index' %}">chJ實例2 華碩​</a></li>
+    </ul>
+
+</body>
+</html>

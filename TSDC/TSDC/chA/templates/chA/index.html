@@ -1,0 +1,42 @@
+﻿<!--chA專題動機-->
+<html>
+<head>
+    <!--讀取照片時需要加-->
+    {% load static %}
+    <title></title>
+</head>
+
+<body>
+    <h1 align="center">專題動機</h1>
+    <dl>
+        <dt>1.想要研究股票何其相關知識</dt>
+        <dd>--每個人都應該學會投資</dd>
+        <dd>--越早開始投資，複利效果越好</dd>
+        <dd>--和他人討論、寫成心得有利於我們的學習</dd>
+        <dt>2.想要了解爬蟲的運作原理</dt>
+        <dd>--有效獲取需要的資料</dd>
+        <dd>--對未來工作有幫助的能力</dd>
+        <dt>3.學習如何架設網站，前端和後端</dt>
+        <dd>--自己架設網頁推銷產品</dd>
+        <dd>--未來專題會用到</dd>
+    </dl>
+    <!-- 圖片：方法一 -->
+    <img src="{% static 'images/report/提早投資.jpg' %}" alt="提早投資" height="180" width="320">
+
+    <ul>
+        <li><a href="{% url 'home' %}">返回首頁</a></li>
+        <li><a href="{% url 'chA:index' %}">chA專題動機</a></li>
+        <li><a href="{% url 'chB:index' %}">chB專題目標</a></li>
+        <li><a href="{% url 'chC:index' %}">chC專題行程</a></li>
+        <li><a href="{% url 'chD:index' %}">chD整理股票相關遭遇的困難</a></li>
+        <li><a href="{% url 'chE:index' %}">chE爬蟲相關遭遇的困難</a></li>
+        <li><a href="{% url 'chF:index' %}">chF撰寫網站遭遇的困難</a></li>
+        <li><a href="{% url 'chG:index' %}">chG小組合作遭遇的困難</a></li>
+        <li><a href="{% url 'chH:index' %}">chH專題展望</a></li>
+        <li><a href="{% url 'chI:index' %}">chI文章範例一</a></li>
+        <li><a href="{% url 'chJ:index' %}">chJ文章範例二</a></li>
+    </ul>
+
+
+</body>
+</html>

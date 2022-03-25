@@ -1,0 +1,26 @@
+﻿<!--chC專題行程-->
+<html>
+<head>
+    <!--讀取照片時需要加-->
+    {% load static %}
+    <title></title>
+</head>
+
+<body>
+ 
+    <ul>
+        <li><a href="{% url 'home' %}">返回首頁</a></li>
+        <li><a href="{% url 'chA:index' %}">chA專題動機</a></li>
+        <li><a href="{% url 'chB:index' %}">chB專題目標</a></li>
+        <li><a href="{% url 'chC:index' %}">chC專題行程</a></li>
+        <li><a href="{% url 'chD:index' %}">chD整理股票相關遭遇的困難</a></li>
+        <li><a href="{% url 'chE:index' %}">chE爬蟲相關遭遇的困難</a></li>
+        <li><a href="{% url 'chF:index' %}">chF撰寫網站遭遇的困難</a></li>
+        <li><a href="{% url 'chG:index' %}">chG小組合作遭遇的困難</a></li>
+        <li><a href="{% url 'chH:index' %}">chH專題展望</a></li>
+        <li><a href="{% url 'chI:index' %}">chI文章範例一</a></li>
+        <li><a href="{% url 'chJ:index' %}">chJ文章範例二</a></li>
+    </ul>
+
+</body>
+</html>

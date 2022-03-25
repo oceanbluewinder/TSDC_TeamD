@@ -1,0 +1,44 @@
+﻿<!--chJ文章範例二-->
+<html>
+<head>
+    <!--讀取照片時需要加-->
+    {% load static %}
+    <title></title>
+</head>
+
+<body>
+
+    <h1 align="center">實例2 華碩​</h1>
+    <!-- 圖片：方法一 -->
+    <img src="{% static 'images/report/加權指數.jpg' %}" alt="加權指數" height="360" width="640">
+    <img src="{% static 'images/report/華碩.jpg' %}" alt="華碩" height="360" width="640">
+    <p>
+        從大盤占比的圖表可以知道電腦及週邊設備業占大盤指數的4.5803%僅次於半導體業、金融保險、電子零組件業，我們可以看到華碩經歷了2012年整體的高峰但同時2013年智慧型手機的虧損導致股價下跌
+    </p>
+    <img src="{% static 'images/report/電腦周邊類大盤.jpg' %}" alt="電腦周邊類大盤" height="360" width="640">
+    <img src="{% static 'images/report/華碩.jpg' %}" alt="華碩" height="360" width="640">
+    <p>
+        由前面公式計算得到各股在電腦及週邊設備類股的占比，經過計算後華碩佔了共59間公司中的2%大約在第10位，除了上一點討論的下降曲線外，可以看到華碩與上是電腦周邊股的大盤走勢相同，也可以從上一點推測，電腦週邊股跟大盤走勢很相近
+    </p>
+    <img src="{% static 'images/report/廣達.jpg' %}" alt="廣達" height="360" width="640">
+    <img src="{% static 'images/report/華碩.jpg' %}" alt="華碩" height="360" width="640">
+    <p>
+        與同類股廣達(佔10.5%)與華碩做比較，可以看到兩支股票下降、上升的時間軸很相近，也可以進一步的推測說兩者都很接近電腦周邊股的大盤，也可以發現2013-2015之間一樣呈現下降，從中推測不只是華碩營運受到影響，廣達也是
+    </p>
+
+    <ul>
+        <li><a href="{% url 'home' %}">返回首頁</a></li>
+        <li><a href="{% url 'chA:index' %}">chA專題動機</a></li>
+        <li><a href="{% url 'chB:index' %}">chB專題目標</a></li>
+        <li><a href="{% url 'chC:index' %}">chC專題行程</a></li>
+        <li><a href="{% url 'chD:index' %}">chD整理股票相關遭遇的困難</a></li>
+        <li><a href="{% url 'chE:index' %}">chE爬蟲相關遭遇的困難</a></li>
+        <li><a href="{% url 'chF:index' %}">chF撰寫網站遭遇的困難</a></li>
+        <li><a href="{% url 'chG:index' %}">chG小組合作遭遇的困難</a></li>
+        <li><a href="{% url 'chH:index' %}">chH專題展望</a></li>
+        <li><a href="{% url 'chI:index' %}">chI文章範例一</a></li>
+        <li><a href="{% url 'chJ:index' %}">chJ文章範例二</a></li>
+    </ul>
+
+</body>
+</html>
